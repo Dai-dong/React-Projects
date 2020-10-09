@@ -1,6 +1,8 @@
-import React from 'react';
-import './App.css';
-import {Cards} from 'react-bootstrap';
+import React from "react";
 
-
+function App(props) {
+  return (
+    
+  );
+}
 export default App;
