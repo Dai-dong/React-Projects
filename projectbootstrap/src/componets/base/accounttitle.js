@@ -1,13 +1,14 @@
-import React from "react";
-import Dropdown from "react-bootstrap/Dropdown";
+import React from 'react';
+import Dropdown from 'react-bootstrap/Dropdown';
+import Styles from './AccountTitleStyle.module.css';
 
 function AccountTitle(prpops) {
   return (
-    <div className="account-title-main-box">
-      <div className="app-logo-box">
+    <div className={Styles.accountTitleMain}>
+      <div className={Styles.appLogo}>
         Cryptocurrency Aasset management Calculator
       </div>
-      <div className="eth-wallet-address">
+      <div className={Styles.ethWalletAddress}>
         <Dropdown>
           <Dropdown.Toggle variant="success" id="dropdown-basic">
             defiportal.eth

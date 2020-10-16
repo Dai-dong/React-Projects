@@ -1,14 +1,14 @@
 import React from'react';
 import AccountTitle from './base/accounttitle.js';
 import MainTabNav from './base/tabnav';
-import DashboradTab from './base/dashboardtab.js';
+import DashboradTop from './base/dashboardtop.js';
 
 function AppHead(props){
     return(
       <React.Fragment>
          <AccountTitle/>
          <MainTabNav/>
-         <DashboradTab/>
+         <DashboradTop/>
       </React.Fragment>
     );
 }
