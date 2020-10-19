@@ -4,7 +4,7 @@ import Styles from './DBItemsTitleStyle.module.css'
 
 function DashboardBodyItemsTitle(props){
     return(
-        <div className={Styles.dashboardBodyItemsTitleBox}>Account Overview</div>
+        <div className={Styles.dashboardBodyItemsTitleBox}>{props.children}</div>
     );
 }
 

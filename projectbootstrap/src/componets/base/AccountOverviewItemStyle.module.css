@@ -1,0 +1,11 @@
+.dashboardItemsBox{
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardBodyItemsMainBox{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
