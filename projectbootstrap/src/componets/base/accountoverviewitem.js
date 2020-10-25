@@ -1,6 +1,6 @@
-import React from "react";
-import DashboardBodyItems from "./dbitems.js";
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import DashboardBodyItems from './dbitems.js';
+import { Container, Row, Col } from 'react-bootstrap';
 import Styles from './AccountOverviewItemStyle.module.css';
 
 function AccountOverviewItem(props) {

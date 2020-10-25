@@ -1,5 +1,4 @@
 import React from 'react';
-import DashboradBody from './dashboardbody.js';
 import Styles from './DashboardTopStyle.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -30,7 +29,6 @@ function DashboradTop(props) {
           </Row>
         </Container>
       </div>
-      <DashboradBody />
     </div>
   );
 }
