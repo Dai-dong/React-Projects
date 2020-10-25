@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "./AllocationBodyItemsStyle.module.css";
 import { ProgressBar, Container, Row, Col} from "react-bootstrap";
 
-function AssetAllocationBodyItems(props) {
+function PlatformAllocationBodyItems(props) {
   return (
     <div className={Styles.allocationBodyItemsBox}>
       <Container>
@@ -22,4 +22,4 @@ function AssetAllocationBodyItems(props) {
   );
 }
 
-export default AssetAllocationBodyItems;
+export default PlatformAllocationBodyItems;
