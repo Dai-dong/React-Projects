@@ -8,10 +8,10 @@ import AppBody from './componets/AppBody';
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
      <AppHead/>
      <AppBody/>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 
