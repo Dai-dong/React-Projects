@@ -1,98 +1,85 @@
 import React from "react";
 import { Modal, Container, Row, Col, Button } from "react-bootstrap";
 import ModalItems from "./modalItems";
-import dai from "../../Image/Accountoverview/DAI-icon.png";
-import rdai from "../../Image/Accountoverview/rDAI-icon.png";
-import eth from "../../Image/Accountoverview/ETH-icon.png";
-import lend from "../../Image/Accountoverview/LEND-icon.png";
-import snx from "../../Image/Accountoverview/SNX-icon.png";
-import sdefi from "../../Image/Accountoverview/sDEFI-icon.svg";
+import adai from "../../Image/Accountoverview/aDAI-icon.svg";
+import usdcin from "../../Image/Accountoverview/USDC-icon.png";
+import ethin from "../../Image/Accountoverview/ETHindYdX-icon.png";
+import daiin from "../../Image/Accountoverview/DAIincompound-icon.svg";
+import staked from "../../Image/Accountoverview/StakedSNX-icon.png";
 import Styles from "./WalletModalWithGridStyle.module.css";
 
-function WalletModalWithGrid(props) {
+function DepositsModalWithGrid(props) {
   return (
     <Modal show={props.show} onHide={props.onHide}>
       <Modal.Header closeButton>
-        <Modal.Title>Wallet</Modal.Title>
+        <Modal.Title>Deopsits</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Container>
           <Row  className={Styles.modalItemsTitleBox}>
             <Col md={3}>Asset</Col>
             <Col md={3}>Balance</Col>
-            <Col md={3}>Price</Col>
+            <Col md={3}>APY</Col>
             <Col md={3}>Value</Col>
           </Row>
           <Row>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>
             <ModalItems
-              address={eth}
-              imagename={"ETH"}
-              name={"ETH"}
+              address={ethin}
+              imagename={"ETH in dYdX"}
+              name={"ETH in dYdX"}
             ></ModalItems>
           </Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}></Col>
-          <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
+          <Col md={3} className={Styles.accountOverviewModalItemsBox}>%</Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
           </Row>
           <Row>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>
             <ModalItems
-              address={lend}
-              imagename={"LEND"}
-              name={"LEND"}
+              address={usdcin}
+              imagename={"USDE in Compound"}
+              name={"USDC in Compound"}
             ></ModalItems>
           </Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}></Col>
-          <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
+          <Col md={3} className={Styles.accountOverviewModalItemsBox}>%</Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
           </Row>
           <Row>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>
             <ModalItems
-              address={snx}
-              imagename={"SNX"}
-              name={"SNX"}
+              address={adai}
+              imagename={"aDAI"}
+              name={"aDAI"}
             ></ModalItems>
           </Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}></Col>
-          <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
+          <Col md={3} className={Styles.accountOverviewModalItemsBox}>%</Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
           </Row>
           <Row>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>
             <ModalItems
-              address={dai}
-              imagename={"DAI"}
-              name={"DAI"}
+              address={daiin}
+              imagename={"DAI in Compound"}
+              name={"DAI in Compound"}
             ></ModalItems>
           </Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}></Col>
-          <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
+          <Col md={3} className={Styles.accountOverviewModalItemsBox}>%</Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
           </Row>
           <Row>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>
             <ModalItems
-              address={sdefi}
-              imagename={"sDEFI"}
-              name={"sDEFI"}
+              address={staked}
+              imagename={"Staked SNX"}
+              name={"Staked SNX"}
             ></ModalItems>
           </Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}></Col>
-          <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
-          <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
-          </Row>
-          <Row>
-          <Col md={3} className={Styles.accountOverviewModalItemsBox}>
-            <ModalItems
-              address={rdai}
-              imagename={"rDAI"}
-              name={"rDAI"}
-            ></ModalItems>
-          </Col>
-          <Col md={3} className={Styles.accountOverviewModalItemsBox}></Col>
-          <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
+          <Col md={3} className={Styles.accountOverviewModalItemsBox}>%</Col>
           <Col md={3} className={Styles.accountOverviewModalItemsBox}>$</Col>
           </Row>
         </Container>
@@ -104,4 +91,4 @@ function WalletModalWithGrid(props) {
   );
 }
 
-export default WalletModalWithGrid;
+export default DepositsModalWithGrid;
