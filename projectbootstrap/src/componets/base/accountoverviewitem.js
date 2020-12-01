@@ -3,6 +3,7 @@ import DashboardBodyItems from "./dbitems.js";
 import { Container, Row, Col } from "react-bootstrap";
 import Styles from "./AccountOverviewItemStyle.module.css";
 import WalletModalWithGrid from './walletModalWithGrid';
+import DepositsModalWithGrid from './depositsModalWithGrid';
 
 function AccountOverviewItem(props) {
   const [modalShow, setModalShow] = useState(false);
